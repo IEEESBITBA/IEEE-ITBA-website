@@ -76,6 +76,7 @@ import { ForumDComponent } from './forum-d/forum-d.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
 import { EventsComponent } from './events/events.component';
 import { Error401Component } from './error401/error401.component';
+import { PythonQuizComponent } from './python-quiz/python-quiz.component';
 
 
 
@@ -118,6 +119,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     ContactPageComponent,
     EventsComponent,
     Error401Component,
+    PythonQuizComponent,
   ],
   imports: [
     BrowserModule,

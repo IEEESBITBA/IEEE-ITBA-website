@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+</head>
+<header>
+    <app-navbar></app-navbar>
+</header>
+
+<body>
+    <section id="contact">
+
+      <div class="topbottomLine pt-2 pb-2 mb-4" id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-sm-12 pt-1 pb-1 flexImage" >
+                  <img src="../../assets/image/IEEEContactos.png" alt="Contact" class="IEEEContactImage">
+                </div>
+                <div class="col-md-7 col-sm-12 pt-1 pb-1 flexText" >
+                  <h1 class="page-title"> {{ 'WELCOME.TEXT' | translate }} <span id="profile_title"></span> </h1>
+                </div>
+            </div>
+        </div>
+      </div>
+       <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h3>Email:<span id="profile_email"> </span></h3>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center"> 
+                <div>
+                    <button class="goback-button">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSejjpuBKMdk6S4I1_IGi6TkIMdD1A41Y1axRAiyFj_Fj4tApQ/closedform" class="button-text">
+                            {{ 'PYTHONCOURSES.TESTBUTTON' | translate }} </a>
+                    </button>
+                </div> 
+            </div>
+        </div>
+        
+    </section>
+
+    <app-footer></app-footer>
+    
+</body>
+
+</html>

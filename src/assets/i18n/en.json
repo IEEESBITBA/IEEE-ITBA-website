@@ -248,5 +248,8 @@
 	"ERROR": {
 		"ROLE": "You don't have the required credentials to access this page",
 		"GOBACK": "Go back to the homepage"
+	},
+	"PROFILE": {
+		"TITLE": "Profile"
 	}
 }

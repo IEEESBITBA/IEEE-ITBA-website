@@ -60,7 +60,13 @@ const routes: Routes = [
   { path: 'contact', component: ContactPageComponent},
   { path: 'events', component: EventsComponent},
   { path: 'error401', component: Error401Component},
-  { path: 'profile', component: ProfileComponent},
+  { path: 'profile',
+    component: ProfileComponent,
+    canActivate: [AuthGuardService],
+    data: {
+      expectedRole: [roles.pythonStudent]
+    }
+  },
 
   { path: 'python/u/:uid/unsubscribe/:tid', component: ForumCComponent },
   { path: 'python/u/:uid/unsubscribe', component: ForumDComponent },

@@ -259,5 +259,8 @@
 	"ERROR": {
 		"ROLE": "No tienes permiso para acceder a esa página",
 		"GOBACK": "Volver a la página principal"
+	},
+	"PROFILE": {
+		"TITLE": "Perfil"
 	}
 }

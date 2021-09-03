@@ -21,6 +21,7 @@ export class NavbarComponent implements OnInit {
   user: Observable<IEEEuser>;
   logguedIn: boolean = false;
   journalist: boolean = false;
+  profile: boolean = false;
 
   newsRoles: roles[] = [roles.admin, roles.contentCreator]
 
@@ -53,8 +54,20 @@ export class NavbarComponent implements OnInit {
         document.getElementById('account').innerText=' Welcome back, ' + usuario.fname;
         this.logguedIn = true;
         let aux: number = await this.userService.getCurrentUserRole(usuario.email);
+        /*
         if(this.newsRoles.includes(aux)){
           this.journalist = true;
+        }
+        */
+        switch(aux){
+          case roles.contentCreator:
+            this.journalist = true;
+            break;
+          case roles.pythonStudent:
+            this.profile = true;
+            break;
+          default:
+            break;
         }
       }
       else {
